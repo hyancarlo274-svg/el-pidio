@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video de Facebook</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 560px; margin: 40px auto; padding: 0 18px; line-height: 1.5; }
+    .notice { background: #f3f4f6; border-radius: 12px; padding: 14px; margin: 18px 0; }
+    a.button { display: inline-block; padding: 11px 16px; border-radius: 8px; background: #1877f2; color: white; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h2>Video de Facebook</h2>
+  <p>Este enlace te llevará al video compartido en Facebook.</p>
+  <div class="notice">
+    <strong>Aviso de privacidad:</strong>
+    Al pulsar el botón de continuar, se abrirá Facebook y se visitará también un enlace de Canarytokens, que puede registrar que se abrió este enlace. Continúa solo si estás de acuerdo.
+  </div>
+  <button id="continue">Continuar a Facebook</button>
+  <script>
+    document.getElementById("continue").addEventListener("click", function () {
+      window.open("https://uw2ocpob7dgafbdpshhjt61dk.canarytokens.com", "_blank", "noopener");
+      window.location.href = "https://www.facebook.com/share/v/1E2UF4eoR9/";
+    });
+  </script>
+</body>
+</html>
